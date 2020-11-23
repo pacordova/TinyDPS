@@ -991,7 +991,7 @@ local isExcludedPet = {
 local function initialiseSavedVariables()
   tdps = {
     speed = 2,
-    width = 190,
+    width = 150,
     version = -1,
     autoReset = true,
     swapColor = true,
@@ -1197,7 +1197,7 @@ local CombatLogGetCurrentEventInfo = CombatLogGetCurrentEventInfo
 local UnitName, UnitGUID, UnitClass, UnitIsPlayer, UnitAffectingCombat = UnitName, UnitGUID, UnitClass, UnitIsPlayer,
 UnitAffectingCombat
 local IsInInstance, IsInRaid, IsInGroup, InCombatLockdown, IsInBattle = IsInInstance, IsInRaid, IsInGroup,
-InCombatLockdown, C_PetBattles.IsInBattle
+InCombatLockdown
 local GetNumGroupMembers, GetWorldPVPAreaInfo, GetBestMapForUnit = GetNumGroupMembers, GetWorldPVPAreaInfo,
 C_Map.GetBestMapForUnit
 
@@ -2912,8 +2912,6 @@ tdpsAnchor:RegisterEvent("GROUP_ROSTER_UPDATE")
 tdpsAnchor:RegisterEvent("PLAYER_ENTERING_WORLD")
 tdpsAnchor:RegisterEvent("ZONE_CHANGED_NEW_AREA")
 tdpsAnchor:RegisterEvent("UPDATE_UI_WIDGET")
-tdpsAnchor:RegisterEvent("PET_BATTLE_OPENING_START")
-tdpsAnchor:RegisterEvent("PET_BATTLE_CLOSE")
 
 local wasInGroup
 tdpsAnchor:SetScript("OnEvent", function(self, event, ...)

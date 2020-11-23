@@ -1,4 +1,4 @@
-## Interface: 80205
+## Interface: 99999
 
 ## Title: TinyDPS
 ## Notes: A lightweight damage and healing meter.
